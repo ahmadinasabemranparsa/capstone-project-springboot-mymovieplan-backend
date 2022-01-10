@@ -33,10 +33,9 @@ public class MovieTicket {
 	
 	public MovieTicket() {}
 
-	public MovieTicket(Long id, String movieName, String showDate, String showTime, String showingLocation,
+	public MovieTicket(String movieName, String showDate, String showTime, String showingLocation,
 			Long price) {
 		super();
-		this.id = id;
 		this.movieName = movieName;
 		this.showDate = showDate;
 		this.showTime = showTime;

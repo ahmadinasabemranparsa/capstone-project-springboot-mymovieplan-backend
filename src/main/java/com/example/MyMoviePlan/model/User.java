@@ -20,7 +20,7 @@ public class User {
 	private String firstName;
 	
 	@Column(name = "last_name")
-	private String LastName;
+	private String lastName;
 	
 	@Column(name = "username")
 	private String username;
@@ -33,11 +33,10 @@ public class User {
 	
 	public User() {}
 
-	public User(Long id, String firstName, String lastName, String username, String email, String password) {
+	public User(String firstName, String lastName, String username, String email, String password) {
 		super();
-		this.id = id;
 		this.firstName = firstName;
-		LastName = lastName;
+		this.lastName = lastName;
 		this.username = username;
 		this.email = email;
 		this.password = password;
@@ -60,11 +59,11 @@ public class User {
 	}
 
 	public String getLastName() {
-		return LastName;
+		return lastName;
 	}
 
 	public void setLastName(String lastName) {
-		LastName = lastName;
+		this.email  = lastName;
 	}
 
 	public String getUsername() {

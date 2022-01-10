@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.MyMoviePlan.model.Cart;
 import com.example.MyMoviePlan.model.User;
 import com.example.MyMoviePlan.repository.UserRepository;
 

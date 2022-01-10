@@ -33,9 +33,8 @@ public class Cart {
 	
 	public Cart() {}
 
-	public Cart(Long id, String movieName, String showDate, String showTime, String showingLocation, Long price) {
+	public Cart(String movieName, String showDate, String showTime, String showingLocation, Long price) {
 		super();
-		this.id = id;
 		this.movieName = movieName;
 		this.showDate = showDate;
 		this.showTime = showTime;

@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.MyMoviePlan.model.Cart;
+import com.example.MyMoviePlan.model.MovieTicket;
 import com.example.MyMoviePlan.repository.CartRepository;
 
 @RestController
