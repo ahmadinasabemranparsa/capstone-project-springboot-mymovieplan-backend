@@ -28,11 +28,14 @@ public class MovieTicketSearchResultsController {
 	
 	@PostMapping("/movieTicket/search/results/add")
 	public MovieTicketSearchResults createMovieTicketSearchResult(
-			@RequestBody(required = false) MovieTicketSearchResults movieTicketSearchResults) {
-		return movieTicketSearchResultsRepository.save(movieTicketSearchResults);
+			@RequestBody(required = false) String movieTicketSearchResults) {
+		
+		MovieTicketSearchResults movieTicketSearchResults1 = new MovieTicketSearchResults();
+		movieTicketSearchResults1.setMovieName(movieTicketSearchResults);		
+		return movieTicketSearchResultsRepository.save(movieTicketSearchResults1);
 	}
 	
-	@DeleteMapping("/movieTicket/search/results/delete/all")
+	@DeleteMapping("/movieTicket/search/results/delete/")
 	public void deleteAllMovieTicketSearchResults() {
 		movieTicketSearchResultsRepository.deleteAll();
 	}

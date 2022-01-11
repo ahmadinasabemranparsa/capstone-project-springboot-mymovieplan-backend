@@ -33,6 +33,11 @@ public class MovieTicketController {
 		return movieTicketRepository.getMovieTicketByMovieName(movieName);
 	}
 	
+	@GetMapping("/movieTickets/getAParticularMovieById/{id}")
+	public MovieTicket getMovieTicketById(@PathVariable Long id) {
+		return movieTicketRepository.getById(id);
+	}
+	
 	@PostMapping("/movieTickets/add")
 	public MovieTicket addMovieTicket(@RequestBody(required = false) MovieTicket movieTicket) {
 		return movieTicketRepository.save(movieTicket);
